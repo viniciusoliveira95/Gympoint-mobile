@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { RectButton } from 'react-native-gesture-handler';
 
 import Button from '~/components/Button';
 import colors from '~/styles/colors';
@@ -22,7 +23,7 @@ export const ListContainer = styled.View`
   flex: 1;
 `;
 
-export const FlatItem = styled.TouchableOpacity`
+export const FlatItem = styled(RectButton)`
   background: ${colors.backGroundPrimary};
   border: 1px solid #dddddd;
   border-radius: 4px;
